@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Badge, Button } from "reactstrap";
+import { Badge, Button,Table } from "reactstrap";
 import { bindActionCreators } from "redux";
 import * as productActions from "../../redux/action/productActions";
-import { Table } from "reactstrap";
 import * as cartActions from "../../redux/action/cardActions";
 import alertify from "alertifyjs"
 class ProductList extends Component {

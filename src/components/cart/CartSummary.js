@@ -11,6 +11,8 @@ import {
 } from "reactstrap";
 import { bindActionCreators } from "redux";
 import * as cartActions from '../../redux/action/cardActions'
+import {Link} from 'react-router-dom'
+
 class CartSummary extends Component {
   renderEmpty() {
     return (
@@ -35,7 +37,7 @@ class CartSummary extends Component {
             </DropdownItem>
           ))}
           <DropdownItem divider />
-          <DropdownItem>Sepete Git >></DropdownItem>
+          <DropdownItem><Link to={"/cart"}>Sepete Git..</Link></DropdownItem>
         </DropdownMenu>
       </UncontrolledDropdown>
     );
